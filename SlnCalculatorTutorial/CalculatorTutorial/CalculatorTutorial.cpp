@@ -13,14 +13,13 @@ int main()
 	cout << "--- Calculadora de consola ---" << endl << endl;
 	cout << "Ingrese la operación a realizar. Formato: a+b | a-b | a*b | a/b"
 		<< endl;
-	cin >> x >> oper >> y;
-
+	
 	Calculator calcular;
 	while (true)
 	{
+		cin >> x >> oper >> y;
 		result = calcular.Calculate(x, oper, y);
 		cout << "El resultado es: " << result << endl;
-		break;
 	}
 	return 0;
 }
